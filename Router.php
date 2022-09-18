@@ -25,7 +25,7 @@ class Router {
         $rutas_protegidas = ['/admin', '/propiedades/crear', '/propiedades/actualizar', '/propiedades/eliminar', 
         '/vendedores/crear', '/vendedores/actualizar', '/vendedores/eliminar'];
 
-        $urlActual = $_SERVER['PATH_INFO'] ?? '/'; //leer y validar que es una url valida
+        $urlActual = $_SERVER['REQUEST_URI'] === '' ? '/' : $_SERVER['REQUEST_URI'] ; //leer y validar que es una url valida
         $metodo = $_SERVER['REQUEST_METHOD']; //revisar que metodo es
     
         if($metodo === 'GET') {

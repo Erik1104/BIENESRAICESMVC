@@ -29,7 +29,7 @@
                     <img src="../build/img/barras.svg" alt="icono menu responsive">
                 </div>
 
-                <div class="derecha">
+                <div class ="derecha">
                     <img class="dark-mode-boton" src="/build/img/dark-mode.svg">
                     <nav class="navegacion">
                         <a href="/nosotros">Nosotros</a>
